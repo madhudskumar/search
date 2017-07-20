@@ -1,9 +1,10 @@
-doctype html
+extends layout/_layout
 
-html
-    head
-        title search
-
-    body
-        h1  Hello how are you ?
-        h2 whats the weather outside ? 
+block content
+    section
+        include ./includes/header.pug
+    section
+        section#left
+            include ./includes/left-nav
+        section#right
+            include ./includes/search

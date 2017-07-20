@@ -14,7 +14,7 @@ var gulp = require('gulp'),
 var paths = {
     public: './dest/',
     sass: './src/styles/',
-    css: './public/css/'
+    css: './dest/'
 };
 
 
@@ -48,7 +48,7 @@ gulp.task('browser-sync', ['sass', 'pug'], function () {
 });
 
 gulp.task('sass', function () {
-    return gulp.src(paths.sass + '*.scss')
+    return gulp.src(paths.sass + '*.sass')
         .pipe(sass({
             includePaths: [paths.sass],
             outputStyle: 'compressed'
@@ -68,7 +68,7 @@ gulp.task('sass', function () {
  * Watch .pug files run pug-rebuild then reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch(paths.sass + '**/*.scss', ['sass']);
+    gulp.watch(paths.sass + '*.sass', ['sass']);
     gulp.watch('./src/**/*.pug', ['rebuild']);
 });
 
