@@ -1,10 +1,11 @@
 extends layout/_layout
 
 block content
-    section
-        include ./includes/header.pug
-    section
+    section#container-main
         section#left
             include ./includes/left-nav
         section#right
             include ./includes/search
+
+block scripts
+    script(src='/build.js')

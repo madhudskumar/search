@@ -1,3 +1,4 @@
+/** Author: MKDS<Madhu kumar D S> on 20/7/2017**/
 "use strict";
 
 var gulp = require('gulp'),
@@ -6,6 +7,7 @@ var gulp = require('gulp'),
     pug = require('gulp-pug'),
     prefix = require('gulp-autoprefixer'),
     sass = require('gulp-sass'),
+    ts = require('gulp-typescript'),
     browserSync = require('browser-sync');
 
 /*
@@ -16,6 +18,18 @@ var paths = {
     sass: './src/styles/',
     css: './dest/'
 };
+
+/**
+ * task runner for typescript
+ */
+gulp.task('ts', function () {
+    return gulp.src('./src/script/**/*.ts')
+        .pipe(ts({
+            noImplicitAny: true,
+            outFile: 'build.js'
+        }))
+        .pipe(gulp.dest(paths.public));
+});
 
 
 gulp.task('pug', function () {
@@ -29,16 +43,24 @@ gulp.task('pug', function () {
 });
 
 /**
+ * copy assets to the public
+ */
+gulp.task('assets', function () {
+    return gulp.src('./assets/**/*')
+        .pipe(gulp.dest(paths.public))
+});
+
+/**
  * Recompile .pug files and live reload the browser
  */
-gulp.task('rebuild', ['pug'], function () {
+gulp.task('rebuild', ['ts', 'pug'], function () {
     browserSync.reload();
 });
 
 /**
  * Wait for pug and sass tasks, then launch the browser-sync Server
  */
-gulp.task('browser-sync', ['sass', 'pug'], function () {
+gulp.task('browser-sync', ['ts', 'assets', 'sass', 'pug'], function () {
     browserSync({
         server: {
             baseDir: paths.public
@@ -66,10 +88,12 @@ gulp.task('sass', function () {
 /**
  * Watch scss files for changes & recompile
  * Watch .pug files run pug-rebuild then reload BrowserSync
+ * on or if of any sub module in it //**
  */
 gulp.task('watch', function () {
-    gulp.watch(paths.sass + '*.sass', ['sass']);
-    gulp.watch('./src/**/*.pug', ['rebuild']);
+    gulp.watch(paths.sass + '**/*.sass', ['sass']);
+    gulp.watch('./src/views/**/*.pug', ['rebuild']);
+    gulp.watch('./src/script/**/*.ts', ['rebuild']);
 });
 
 gulp.task('build', ['sass', 'pug']);

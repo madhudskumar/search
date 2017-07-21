@@ -1,0 +1,19 @@
+@import "../includes/variables"
+
+input[type="checkbox"]
+  display: inline-block
+  height: 16px
+  width: 16px
+  overflow: hidden
+  margin-top: -4px
+  border-radius: $rad
+  vertical-align: middle
+  -webkit-appearance: none
+  background: $grey_header no-repeat 50% 50%
+  transition: $ani_t_time ease-in-out
+  transition-property: background-color
+  outline: none
+  &:checked
+    background-color: $blue
+    border: 3px solid $grey_header
+    border-radius: $rad
