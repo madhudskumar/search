@@ -1,8 +1,42 @@
 nav
     .logo-main
-    ul
-        li 1
-        li 2
-        li 3
-        li 4
-        li 5
+    ul.remove-style
+        li
+            .user
+                img.border-circle(src="images/u.png")
+                .border-circle.info
+                    span 47
+
+        li.nav-tab-m
+            .path.nav-file.i-nav.border-circle.inline-flex.align-c-center
+                .li-icon
+                    .icon
+                        include ../../../assets/icons/file.svg
+                .border-circle.info
+                    include ../../../assets/icons/add.svg
+
+        li.nav-tab-m
+            .path.nav-file.i-nav.border-circle.inline-flex.align-c-center
+                .li-icon
+                    .icon
+                        include ../../../assets/icons/noti.svg
+                .border-circle.info
+                    include ../../../assets/icons/add.svg
+
+        li.nav-tab-m
+            .path.nav-file.i-nav.border-circle.inline-flex.align-c-center
+                .li-icon
+                    .icon
+                        include ../../../assets/icons/cal.svg
+                .border-circle.info
+                    include ../../../assets/icons/add.svg
+
+        li
+            .margin-left-0.path.nav-ladder.i-nav.border-circle
+                .li-icon
+                    include ../../../assets/icons/time_line.svg
+
+        li.selected
+            .margin-left-0.nav-search.i-nav.border-circle.is-active
+                .li-icon
+                    include ../../../assets/icons/search_W.svg

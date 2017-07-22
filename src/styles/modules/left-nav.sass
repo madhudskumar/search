@@ -1,7 +1,7 @@
 @import "../includes/variables"
 
 #left
-  width: 80px
+  width: 100px
   position: fixed
   overflow-x: hidden
   height: 100%
@@ -14,4 +14,81 @@
     background-color: $blue
 
   ul
-    color: red
+    padding: 0
+    margin: 0
+    li
+      padding: 15px 10px 15px 10px
+      box-shadow: -2px 2px 7px -1px rgba(128,128,128,0.21)
+      &.i-nav:hover
+        background-color: $blue
+        .li-icon > .icon > *
+          fill: white
+      &.selected
+        background-color: $grey_background
+      &.selected
+        background-color: $grey_background
+        border-left: 5px solid $green
+    li>*>img
+      height: $li_metric
+      width: $li_metric
+      border: 2px solid $black
+      z-index: 2
+      &:hover
+        border: 2px solid white
+    .user
+      display: inline-flex
+      align-content: center
+      .info
+        background-color: $green
+        color: $white
+        margin-left: -3px
+        margin-top: auto
+        margin-bottom: auto
+        height: $info_metric
+        width: $info_metric
+        vertical-align: middle
+        z-index: 1
+        span
+          font-size: small
+          text-align: right
+          margin: 5px
+
+.i-nav
+  height: $li_metric
+  width: $li_metric
+  margin: auto
+  background-color: grey
+  &:hover:not([class^=is-active])
+    background-color: $blue
+
+.i-nav.is-active
+  margin: auto
+  background-color: $blue
+  border: none
+  .li-icon > *
+    fill: white
+
+.li-icon
+  padding: 12px 0 0 12px
+  .icon > *
+    fill: lightgrey
+
+
+.i-nav
+  border: 2px solid $black
+
+.nav-tab-m > * > .info
+  z-index: -1
+  height: $info_metric
+  width: $info_metric
+  margin: auto auto auto 5px
+  background: transparent
+  border: 2px solid grey
+  & > *
+    fill: grey
+
+
+.nav-tab-m:hover
+  .i-nav
+    .info:hover
+      background-color: red

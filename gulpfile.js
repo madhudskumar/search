@@ -53,7 +53,7 @@ gulp.task('assets', function () {
 /**
  * Recompile .pug files and live reload the browser
  */
-gulp.task('rebuild', ['ts', 'pug'], function () {
+gulp.task('rebuild', ['assets' ,'ts', 'pug'], function () {
     browserSync.reload();
 });
 
@@ -94,6 +94,7 @@ gulp.task('watch', function () {
     gulp.watch(paths.sass + '**/*.sass', ['sass']);
     gulp.watch('./src/views/**/*.pug', ['rebuild']);
     gulp.watch('./src/script/**/*.ts', ['rebuild']);
+    gulp.watch('./assets/**/*', ['rebuild']);
 });
 
 gulp.task('build', ['sass', 'pug']);
