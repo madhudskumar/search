@@ -1,4 +1,5 @@
 @import "../includes/variables"
+@import "../includes/mixin"
 
 input[type="checkbox"]
   display: inline-block
@@ -29,6 +30,49 @@ ul.remove-style
   display: inline-flex
   &.align-c-center
     align-content: center
+  &.flex-col
+    flex-direction: column
+
+.text-wrap
+  width: 100%
+  overflow-wrap: break-word
+
+mark.col-blue
+  background: lighten($blue, 37%)
+
+.margin-top-10
+  margin-top: 3%!important
+
+.margin-bottom-0
+  margin-bottom: 0!important
+
+.margin-top-0
+  margin-top: 0!important
 
 .margin-left-0
-  margin-left: 0 !important
+  margin-left: 0!important
+
+.margin-left-10
+  margin-left: 3% !important
+
+.padding-left-0
+  padding-left: 0!important
+
+.no-list-syle
+  list-style: none
+
+.icon-hw
+  height: $li_metric
+  width: $li_metric
+
+.date
+  mark
+    background: $grey_background
+    color: $black
+    padding: 3px
+
+
++small
+  *
+    font-size: .9rem
+

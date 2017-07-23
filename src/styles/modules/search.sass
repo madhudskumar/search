@@ -1,4 +1,5 @@
 @import "../includes/variables"
+@import "../includes/mixin"
 
 #right
   margin-left: 100px
@@ -60,6 +61,164 @@
 
 .result-container
   background-color: $white
-  height: 5000px
   margin: $padding_r_left + $padding_r_left $padding_r_left
   box-shadow: $grey_header 0 0 1px 2px
+
+ul.results
+  margin-left: 1.5%
+  li.result
+    margin-top: -1px
+    width: 100%
+    &:hover
+      background-color: lighten($grey_background, 3)
+      transition: $ani_t_time ease-in-out
+      transition-property: background-color
+    &:not(:last-child)
+      border-bottom: 2px solid $grey_header
+    .container
+      width: 100%
+      padding-top: 5%
+      padding-bottom: 5%
+      border-left: 4px solid $grey_header
+      margin-left: 0
+      .icon-date
+        margin-left: -19px
+        display: inline-flex
+        flex-direction: column
+        .icon
+          background-color: $blue
+          height: $icon_metric
+          width: $icon_metric
+          margin-bottom: 20px
+          & > *
+            fill: $white
+            padding-top: 5px
+            padding-left: 5px
+        .date
+          margin-left: -13px
+          width: 65px
+          text-transform: uppercase
+          text-align: center
+
+u.by
+  color: grey
+  font-weight: 500
+
+p.sub
+  width: 95%
+  overflow-wrap: break-word
+
+.container
+  .tab-content
+    margin-left: 4%
+    width: 100%
+    .content
+      width: 100%
+      padding-left: 1.5%
+      p.sub > u:hover
+        color: $blue
+        font-weight: 400
+        cursor: pointer
+
+.container
+  .tab-content
+    .images-grid
+      display: inline-flex
+      flex-direction: column
+      &:not(:last-child)
+        margin-right: 3%
+      .image-holder
+        box-shadow: $grey_header 0 0 1px 2px
+        height: 200px
+        width: auto
+        background: no-repeat center
+        background-size: cover
+
+.container
+  .tab-content
+    .user-img
+      width: 8%
+      display: inline-flex
+      flex-direction: column
+    .content
+      margin-left: 5px
+
+.container
+  .tab-content
+    .discussions
+      .discussion
+        &:not(:first-child)
+          margin-top: 6% !important
+        .content
+          width: 95%
+          overflow-wrap: break-word
+
+a.download
+  text-decoration: underline
+  font-weight: bold
+  text-transform: uppercase
+  color: $blue
+
+span.tag
+  font-weight: 400
+  font-size: small
+  margin-left: 8px
+  border: 1px solid darkgray
+  padding: 0 6px
+  &:hover
+    background: $green
+    color: $white
+    cursor: pointer
+
+.tagged
+  display: inline-flex
+  flex-direction: column
+  .item
+    border-radius: $rad
+    background: lighten($black, 29)
+    display: inline-flex
+    flex-direction: row
+    span
+      padding: 0 5px
+      color: white
+    .close
+      color: white
+      font-weight: bold
+      padding-right: 5px
+      &:hover
+        color: red
+        cursor: pointer
+
+
+=padLR()
+  padding-left: redPad(13)
+  padding-right: redPad(13)
+
++small
+  .search-heading
+    .search-result
+      @include padLR
+  .search-container
+    @include padLR
+  .result-container
+    margin: redPad(13px) + redPad(13px) redPad(13px)
+  .search-opt-container
+    ul.selector
+      flex-direction: column
+
+  .container
+    .tab-content
+      flex-direction: column
+      & > *:not(:first-child)
+        margin-top: 5%
+      .images-grid
+        display: inline-flex
+        flex-direction: column
+
+  .container
+    .tab-content
+      .user-img
+        width: 100%
+        flex-direction: row
+        .name-info
+          margin: auto 3%

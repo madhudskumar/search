@@ -9,13 +9,167 @@ div
             div#search-box.search-box
                 span
                     include ../../../assets/icons/search.svg
-                input#search(placeholder='Search')
+                input#search(placeholder='Search' value='Preview')
     .search-opt-container
         ul.remove-style.selector
             - var selectors = ["Todos", "Discussions", "Files", "Progress", "Team Members"];
                 each item in selectors
                     li
-                        input.checkbox(type="checkbox" value=item name=item)
+                        -var checked = false
+                        if item === "Todos"
+                            -checked = true
+                        input.checkbox(type="checkbox"  value=item checked=checked name=item)
                         label= item
 
     .result-container
+        ul.no-list-syle.results
+            li.result.type-file
+                .container.file.inline-flex
+                    .icon-date
+                        .icon.border-circle
+                            include ../../../assets/icons/file.svg
+                        .date
+                            mark 17 JULY
+                    .tab-content.inline-flex
+                        .file-img.icon-hw
+                            include ../../../assets/icons/docx.svg
+                        .content
+                            h3.head.margin-top-0.margin-bottom-0
+                                mark.col-blue Preview
+                                | _timeline_v1.jpg
+                                span.tag TAG
+                            p.sub.margin-top-0.margin-bottom-0
+                                | attached to comment
+                                |
+                                u.in timeLinne
+                                |
+                                | by
+                                |
+                                u.by Bharat
+                            a.download.margin-top-0(href='#') download
+                            br
+                            ul.tagged.no-list-syle.padding-left-0.margin-top-10
+                                li.item.margin-top-10
+                                    span Timeline
+                                    .close
+                                        | X
+            li.result.type-image-grid
+                .container.file.inline-flex
+                    .icon-date
+                        .icon.border-circle
+                            include ../../../assets/icons/file.svg
+                        .date
+                            mark 17 JULY
+                    .tab-content.inline-flex
+                        .images-grid
+                            .image-holder(style='background-image: url("./images/grid_img.png")')
+                            .content.margin-top-10.padding-left-0.margin-left-0
+                                h3.head.margin-top-0.margin-bottom-0
+                                    mark.col-blue Preview
+                                    | _timeline_v1.jpg
+                                    span.tag TAG
+                                p.sub.margin-top-0.margin-bottom-0
+                                    | by
+                                    |
+                                    u.by Bharat
+                                a.download.margin-top-0(href='#') download
+                        .images-grid
+                            .image-holder(style='background-image: url("./images/grid_img.png")')
+                            .content.margin-top-10.margin-left-0.padding-left-0
+                                h3.head.margin-top-0.margin-bottom-0
+                                    mark.col-blue Preview
+                                    | _timeline_v1.jpg
+                                    span.tag TAG
+                                p.sub.margin-top-0.margin-bottom-0
+                                    | by
+                                    |
+                                    u.by Bharat
+                                a.download.margin-top-0(href='#') download
+            li.result.type-file
+                .container.file.inline-flex
+                    .icon-date
+                        .icon.border-circle
+                            include ../../../assets/icons/file.svg
+                        .date
+                            mark 17 JULY
+                    .tab-content.inline-flex
+                        .file-img.icon-hw
+                            include ../../../assets/icons/docx.svg
+                        .content
+                            h3.head.margin-top-0.margin-bottom-0
+                                mark.col-blue Preview
+                                | _timeline_v1.jpg
+                                span.tag TAG
+                            p.sub.margin-top-0.margin-bottom-0
+                                | attached to comment
+                                |
+                                u.in timeLinne
+                                |
+                                | by
+                                |
+                                u.by Bharat
+                            a.download.margin-top-0(href='#') download
+            li.result.type-chat
+                .container.user.inline-flex
+                    .icon-date
+                        .icon.border-circle
+                            include ../../../assets/icons/chat.svg
+                        .date
+                            mark 17 JULY
+                    .tab-content.inline-flex
+                        .user-img.icon-hw
+                            .user
+                                img.border-circle.icon-hw(src='images/u.png')
+                            .name-info
+                                b Madhu Kumar
+                                br
+                                small
+                                    i 1 JULY 2013
+                        .content
+                            h3.head.margin-top-0.margin-bottom-0
+                                | Discussion headding
+                            p.sub.margin-top-0.margin-bottom-0
+                                | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                mark.col-blue  has been the industry
+                                | 's standard dummy text ever since the 1500s, when an unknown
+                                | printer took a galley of type and scrambled it
+                            p.sub.margin-top-10.margin-bottom-0
+                                span(style='color:lightgrey') under
+                                |
+                                |
+                                u.by sharing of final proposal
+            li.result.type-notification
+                .container.file.inline-flex
+                    .icon-date
+                        .icon.border-circle
+                            include ../../../assets/icons/noti_o.svg
+                        .date
+                            mark 17 JULY
+                    .tab-content.inline-flex.flex-col
+                        section.discussions
+                            .discussion
+                                .content.padding-left-0.margin-left-0
+                                    p
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        | Etiam non magna eu quam pretium fringilla. Cras sodales, massa vel efficitur
+                                        | auctor, erat orci rutrum ante, vitae sodales velit nisi id mi.
+                                .by-comment
+                                    p.sub.margin-top-10.margin-bottom-0
+                                        span Bharat
+                                        |
+                                        |
+                                        |
+                                        span.by.margin-left-10 4 comments
+                            .discussion.margin-top-10
+                                .content.padding-left-0.margin-left-0
+                                    p(style='text-decoration:line-through;color:grey')
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        | Etiam non magna eu quam pretium fringilla. Cras sodales, massa vel efficitur
+                                        | auctor, erat orci rutrum ante, vitae sodales velit nisi id mi.
+                                .by-comment
+                                    p.sub.margin-top-10.margin-bottom-0
+                                        span Bharat
+                                        |
+                                        |
+                                        |
+                                        span.by.margin-left-10 4 comments
