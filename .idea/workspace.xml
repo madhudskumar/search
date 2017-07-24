@@ -2,20 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb345a07-ac0a-45e3-a951-7c080920a410" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/styles/modules/medium.search.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/build.js" afterPath="$PROJECT_DIR$/dest/build.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/index.html" afterPath="$PROJECT_DIR$/dest/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/style.css" afterPath="$PROJECT_DIR$/dest/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/script/app.main.ts" afterPath="$PROJECT_DIR$/src/script/app.main.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/includes/_mixin.sass" afterPath="$PROJECT_DIR$/src/styles/includes/_mixin.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/includes/_variables.sass" afterPath="$PROJECT_DIR$/src/styles/includes/_variables.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/modules/global.sass" afterPath="$PROJECT_DIR$/src/styles/modules/global.sass" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/modules/left-nav.sass" afterPath="$PROJECT_DIR$/src/styles/modules/left-nav.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/modules/search.sass" afterPath="$PROJECT_DIR$/src/styles/modules/search.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/style.sass" afterPath="$PROJECT_DIR$/src/styles/style.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/includes/search.pug" afterPath="$PROJECT_DIR$/src/views/includes/search.pug" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/index.pug" afterPath="$PROJECT_DIR$/src/views/index.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/includes/left-nav.pug" afterPath="$PROJECT_DIR$/src/views/includes/left-nav.pug" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,60 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="style.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/style.sass">
+      <file leaf-file-name="left-nav.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/modules/left-nav.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/modules/search.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="219" column="20" lean-forward="false" selection-start-line="219" selection-start-column="20" selection-end-line="219" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="medium.search.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/modules/medium.search.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="search.pug" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/views/includes/search.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="n#div#0;n#li#0;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#li#1;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#2;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-                <element signature="n#li#4;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.pug" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/views/index.pug">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+            <state relative-caret-position="751">
+              <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -91,18 +33,8 @@
       <file leaf-file-name="left-nav.pug" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/views/includes/left-nav.pug">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="left-nav.sass" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/modules/left-nav.sass">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="827">
-              <caret line="108" column="30" lean-forward="false" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
+            <state relative-caret-position="266">
+              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -152,6 +84,7 @@
       <find>.li</find>
       <find>#le</find>
       <find>.ima</find>
+      <find>.info</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -176,14 +109,14 @@
         <option value="$PROJECT_DIR$/src/styles/modules/search.sass" />
         <option value="$PROJECT_DIR$/src/styles/includes/_variables.sass" />
         <option value="$PROJECT_DIR$/src/styles/style.sass" />
-        <option value="$PROJECT_DIR$/src/views/includes/left-nav.pug" />
         <option value="$PROJECT_DIR$/dest/index.html" />
         <option value="$PROJECT_DIR$/src/views/index.pug" />
-        <option value="$PROJECT_DIR$/src/styles/modules/left-nav.sass" />
         <option value="$PROJECT_DIR$/src/styles/modules/global.sass" />
         <option value="$PROJECT_DIR$/src/script/app.main.ts" />
         <option value="$PROJECT_DIR$/src/styles/modules/medium.search.sass" />
         <option value="$PROJECT_DIR$/src/views/includes/search.pug" />
+        <option value="$PROJECT_DIR$/src/views/includes/left-nav.pug" />
+        <option value="$PROJECT_DIR$/src/styles/modules/left-nav.sass" />
       </list>
     </option>
   </component>
@@ -305,12 +238,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500570713945</updated>
-      <workItem from="1500570717587" duration="94328000" />
+      <workItem from="1500570717587" duration="94998000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94328000" />
+    <option name="totallyTimeSpent" value="94998000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -484,42 +417,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/includes/_variables.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dest/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="33" lean-forward="true" selection-start-line="0" selection-start-column="33" selection-end-line="0" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/index.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/includes/left-nav.pug">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" column="39" lean-forward="false" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/modules/left-nav.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="827">
-          <caret line="108" column="30" lean-forward="false" selection-start-line="108" selection-start-column="30" selection-end-line="108" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -532,10 +433,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/style.sass">
+    <entry file="file://$PROJECT_DIR$/src/script/app.main.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="230">
+          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/includes/search.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="n#div#0;n#li#0;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#li#1;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#li#1;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#li#2;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+            <element signature="n#li#4;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/modules/medium.search.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -548,36 +474,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/script/app.main.ts">
+    <entry file="file://$PROJECT_DIR$/src/styles/style.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="29" column="16" lean-forward="false" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
+        <state relative-caret-position="190">
+          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/modules/medium.search.sass">
+    <entry file="file://$PROJECT_DIR$/src/views/index.pug">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="15" column="19" lean-forward="false" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        <state relative-caret-position="304">
+          <caret line="8" column="8" lean-forward="false" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/views/includes/search.pug">
+    <entry file="file://$PROJECT_DIR$/src/styles/includes/_variables.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="22" column="28" lean-forward="false" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="n#div#0;n#li#0;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#li#1;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#2;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#li#3;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-            <element signature="n#li#4;n#ul#0;n#div#3;n#div#0;n#!!top" expanded="false" />
-          </folding>
+        <state relative-caret-position="76">
+          <caret line="2" column="1" lean-forward="false" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/views/includes/left-nav.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/modules/left-nav.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="751">
+          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>
