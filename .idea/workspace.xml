@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eb345a07-ac0a-45e3-a951-7c080920a410" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/index.html" afterPath="$PROJECT_DIR$/dest/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dest/style.css" afterPath="$PROJECT_DIR$/dest/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/modules/left-nav.sass" afterPath="$PROJECT_DIR$/src/styles/modules/left-nav.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/views/includes/left-nav.pug" afterPath="$PROJECT_DIR$/src/views/includes/left-nav.pug" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/modules/global.sass" afterPath="$PROJECT_DIR$/src/styles/modules/global.sass" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -20,11 +16,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="left-nav.sass" pinned="false" current-in-tab="true">
+      <file leaf-file-name="left-nav.sass" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/styles/modules/left-nav.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="751">
-              <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+            <state relative-caret-position="827">
+              <caret line="100" column="27" lean-forward="true" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="global.sass" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/modules/global.sass">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="561">
+              <caret line="127" column="26" lean-forward="false" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -111,12 +117,12 @@
         <option value="$PROJECT_DIR$/src/styles/style.sass" />
         <option value="$PROJECT_DIR$/dest/index.html" />
         <option value="$PROJECT_DIR$/src/views/index.pug" />
-        <option value="$PROJECT_DIR$/src/styles/modules/global.sass" />
         <option value="$PROJECT_DIR$/src/script/app.main.ts" />
         <option value="$PROJECT_DIR$/src/styles/modules/medium.search.sass" />
         <option value="$PROJECT_DIR$/src/views/includes/search.pug" />
         <option value="$PROJECT_DIR$/src/views/includes/left-nav.pug" />
         <option value="$PROJECT_DIR$/src/styles/modules/left-nav.sass" />
+        <option value="$PROJECT_DIR$/src/styles/modules/global.sass" />
       </list>
     </option>
   </component>
@@ -238,12 +244,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1500570713945</updated>
-      <workItem from="1500570717587" duration="94998000" />
+      <workItem from="1500570717587" duration="95413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94998000" />
+    <option name="totallyTimeSpent" value="95413000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -425,14 +431,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/modules/global.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="125" column="17" lean-forward="true" selection-start-line="125" selection-start-column="17" selection-end-line="125" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/script/app.main.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -508,8 +506,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/modules/left-nav.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="751">
-          <caret line="54" column="31" lean-forward="true" selection-start-line="54" selection-start-column="31" selection-end-line="54" selection-end-column="31" />
+        <state relative-caret-position="827">
+          <caret line="100" column="27" lean-forward="true" selection-start-line="100" selection-start-column="27" selection-end-line="100" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/modules/global.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="127" column="26" lean-forward="false" selection-start-line="127" selection-start-column="26" selection-end-line="127" selection-end-column="26" />
           <folding />
         </state>
       </provider>
