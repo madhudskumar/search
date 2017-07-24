@@ -1,5 +1,26 @@
 @import "../includes/variables"
 @import "../includes/mixin"
+//
+//*, *:before, *:after
+//  box-sizing: border-box
+
+html, body
+  font-family: 'Open Sans', sans-serif
+  padding: 0
+  width: 100%
+  height: 100%
+  margin: 0
+  overflow-x: hidden
+  background-color: $grey_background
+  -webkit-backface-visibility: hidden
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+
+#container-main
+  display: block
+  width: auto
+
 
 input[type="checkbox"]
   display: inline-block
@@ -72,7 +93,45 @@ mark.col-blue
     padding: 3px
 
 
-+small
+#menu
+  display: none
+  transition: $ani_t_time ease-in-out
+  transition-property: all
+  position: fixed
+  bottom: 0
+  .li-icon
+    .icon
+      height: $icon_metric
+      width: $icon_metric
+      margin-bottom: 20px
+      background-color: $blue
+      border-top-right-radius: 50%
+      border-bottom-right-radius: 50%
+      & > *
+        padding: 12%
+        fill: white
+
++medium
   *
     font-size: .9rem
+  #menu
+    display: block
+    &.margin-left-100
+      margin-left: 100px
+      transition: $ani_t_time ease-in-out
+      transition-property: all
+      .li-icon
+        .icon
+          background-color: red
+        .icon > *
+          transform: rotate(180deg)
+          transition: $ani_t_time ease-in-out
+          transition-property: all
+    &:hover
+      #left
+        z-index: 12
+        display: block
 
++small
+  *
+    font-size: .8rem

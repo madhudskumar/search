@@ -1,13 +1,13 @@
 @import "../includes/variables"
+@import "../includes/mixin"
 
 #left
   width: 100px
   position: fixed
   overflow-x: hidden
   height: 100%
-  background: url("http://api.thumbr.it/whitenoise-361x370.png?background=2c2e2cff&noise=626262&density=25&opacity=28")
-
-
+  //background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=2c2e2cff&noise=626262&density=25&opacity=28")
+  background-color: $black
   .logo-main
     height: 50px
     width: 100%
@@ -20,7 +20,6 @@
       padding: 15px 10px 15px 10px
       box-shadow: -2px 2px 7px -1px rgba(128,128,128,0.21)
       &.i-nav:hover
-        background-color: $blue
         .li-icon > .icon > *
           fill: white
       &.selected
@@ -34,7 +33,9 @@
       border: 2px solid $black
       z-index: 2
       &:hover
-        border: 2px solid white
+        border: 2px solid $grey_header
+        transition: $ani_t_time ease-in-out
+        transition-property: border
     .user
       display: inline-flex
       align-content: center
@@ -60,6 +61,8 @@
   background-color: grey
   &:hover:not([class^=is-active])
     background-color: $blue
+    transition: $ani_t_time ease-in-out
+    transition-property: background-color
 
 .i-nav.is-active
   margin: auto
@@ -96,3 +99,11 @@
   .i-nav:hover
     .info:hover
       background-color: red
+
++medium
+  #left
+    margin-left: -100px
+    &.show
+      margin-left: 0
+      transition: $ani_t_time ease-in-out
+      transition-property: all

@@ -69,11 +69,11 @@ ul.results
   li.result
     margin-top: -1px
     width: 100%
-    &:hover
+    &:hover:not(:last-child)
       background-color: lighten($grey_background, 3)
       transition: $ani_t_time ease-in-out
       transition-property: background-color
-    &:not(:last-child)
+    &:not(:nth-last-child(2)):not(:last-child)
       border-bottom: 2px solid $grey_header
     .container
       width: 100%
@@ -124,7 +124,13 @@ p.sub
   .tab-content
     .images-grid
       display: inline-flex
+      padding: .5%
       flex-direction: column
+      &:hover
+        border-radius: $rad
+        background-color: $grey_background
+        box-shadow: $grey_background 0 0 1px 2px
+        transition: box-shadow,background-color $ani_t_time ease-in-out
       &:not(:last-child)
         margin-right: 3%
       .image-holder
@@ -152,6 +158,28 @@ p.sub
         .content
           width: 95%
           overflow-wrap: break-word
+
+.result.show-more
+  .container
+    text-align: center
+    margin-top: -7%
+    padding-bottom: 2%!important
+    &:hover
+      background-color: transparent
+    button
+      border-radius: $rad
+      padding: .5% 35%
+      border: none
+      background-color: $grey_background
+      text-transform: uppercase
+      font-weight: bold
+      cursor: pointer
+      outline: none
+      &:hover
+        background-color: $grey_header
+        border: none
+        box-shadow: $grey_background 0 0 1px 2px
+        transition: box-shadow,background-color $ani_t_time ease-in-out
 
 a.download
   text-decoration: underline
@@ -189,36 +217,4 @@ span.tag
         color: red
         cursor: pointer
 
-
-=padLR()
-  padding-left: redPad(13)
-  padding-right: redPad(13)
-
-+small
-  .search-heading
-    .search-result
-      @include padLR
-  .search-container
-    @include padLR
-  .result-container
-    margin: redPad(13px) + redPad(13px) redPad(13px)
-  .search-opt-container
-    ul.selector
-      flex-direction: column
-
-  .container
-    .tab-content
-      flex-direction: column
-      & > *:not(:first-child)
-        margin-top: 5%
-      .images-grid
-        display: inline-flex
-        flex-direction: column
-
-  .container
-    .tab-content
-      .user-img
-        width: 100%
-        flex-direction: row
-        .name-info
-          margin: auto 3%
+@import "medium.search"

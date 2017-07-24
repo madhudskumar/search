@@ -11,15 +11,17 @@ div
                     include ../../../assets/icons/search.svg
                 input#search(placeholder='Search' value='Preview')
     .search-opt-container
-        ul.remove-style.selector
-            - var selectors = ["Todos", "Discussions", "Files", "Progress", "Team Members"];
-                each item in selectors
-                    li
-                        -var checked = false
-                        if item === "Todos"
-                            -checked = true
-                        input.checkbox(type="checkbox"  value=item checked=checked name=item)
-                        label= item
+        form
+            ul.remove-style.selector
+                - var selectors = ["Todos", "Discussions", "Files", "Progress", "Team Members"];
+                    each item in selectors
+                        li
+                            -var checked = false
+                            if item === "Todos"
+                                -checked = true
+
+                            input.checkbox(type="checkbox"  for=item value=item checked=checked name=item)
+                            label(id=item)= item
 
     .result-container
         ul.no-list-syle.results
@@ -173,3 +175,6 @@ div
                                         |
                                         |
                                         span.by.margin-left-10 4 comments
+            li.result.show-more
+                .container
+                    button(onclick='alert("loading")') load more

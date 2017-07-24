@@ -1,7 +1,11 @@
 @import ./variables
 
 =small()
-  @media only screen and (max-width: $break-large)
+  @media only screen and (max-width: $break-small)
+    @content
+
+=medium()
+  @media only screen and (max-width: $break-medium)
     @content
 
 

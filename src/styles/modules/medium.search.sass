@@ -1,0 +1,42 @@
+@import "../includes/variables"
+@import "../includes/mixin"
+
+=padLR()
+  padding-left: redPad(13)
+  padding-right: redPad(13)
+
++medium
+  #right
+    margin-left: 0
+  .search-heading
+    .search-result
+      @include padLR
+  .search-container
+    @include padLR
+  .result-container
+    margin: redPad(13px) + redPad(13px) redPad(13px)
+  .search-opt-container
+    ul.selector
+      flex-direction: column
+
+  .tab-content
+    margin-right: 8% !important
+    .image-holder
+      margin-right: 2% !important
+
+  .container
+    .tab-content
+      flex-direction: column
+      & > *:not(:first-child)
+        margin-top: 5%
+      .images-grid
+        display: inline-flex
+        flex-direction: column
+
+  .container
+    .tab-content
+      .user-img
+        width: 100%
+        flex-direction: row
+        .name-info
+          margin: auto 3%
